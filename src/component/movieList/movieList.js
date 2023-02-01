@@ -14,7 +14,6 @@ const MovieList = () => {
   useEffect(() => {
     getData();
   }, [type]);
-
   const getData = () => {
     fetch(
       `https://api.themoviedb.org/3/movie/${
