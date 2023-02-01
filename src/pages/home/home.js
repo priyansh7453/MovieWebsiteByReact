@@ -55,7 +55,7 @@ const Home = () => {
             </Link>
           ))}
         </Carousel>
-        {/* <MovieList /> */}
+        <MovieList />
       </div>
     </>
   );

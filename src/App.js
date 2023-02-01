@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./component/header/Header";
 import Home from "./pages/home/home";
 import MovieList from "./component/movieList/movieList";
-// import Movie from "./pages/m"
+import Movie from "./pages/movieDetails/movie";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
         <Header />
         <Routes>
           <Route index element={<Home />}></Route>
-          <Route path="movie/:id" element={<h1>my list</h1>}></Route>
+          <Route path="movie/:id" element={<Movie />}></Route>
           <Route path="movies/:type" element={<MovieList />}></Route>
           <Route path="/*" element={<h1>Error page</h1>}></Route>
         </Routes>
